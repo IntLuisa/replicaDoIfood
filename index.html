@@ -7,7 +7,8 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/79eceb2aba.js" crossorigin="anonymous"></script>
 </head>
-<header class="text-2xl flex flex-row justify-around">
+<!-- -->
+<header class="text-2xl flex flex-row py-10 justify-around items-center">
     <section>logo</section>
 
     <section class="flex flex-row gap-4">
@@ -19,29 +20,29 @@
         <div>shopping</div>
     </section>
 <!-- barra de pesquisa -->
-    <section class="rounded-full flex gap-4 bg-grey-800">
+    <section class="rounded-full flex flex-row gap-4 bg-gray-200 px-44 py-2  text-2xl justify-between">
             <div><i class="fa-solid fa-magnifying-glass"></i></div>
             <div><p>busque por item ou loja</p></div>
     </section>
 
-    <section class="flex flex-row gap-4 text-red-900 justify-end">
+    <section class="flex flex-row gap-4 text-red-600 justify-end">
         <div>login</div>
-        <div class="rounded-md">sign up</div>
+        <div class=" border-solid rounded-xl outline-2 px-4">sign up</div>
     </section>
 </header>
 
 <body>
-    <section class="bg-green-400 flex flex-row gap-9 text-2xl justify-center">
+    <section class="bg-green-600 text-white flex flex-row gap-9 text-2xl justify-center py-5">
         <div><i class="fa-solid fa-ticket"></i></div>
         <p>Você tem 63 cupons! Aproveite seus descontos</p>      
         <div><i class="fa-solid fa-caret-down"></i></div>  
     </section>
-    <section>
-        <div>
+    <section class="mx-15 ">
+        <div class="font-semibold  text-3xl">
             Pedir seu delivery no iFood é rápido e prático! Conheça as categorias
         </div>
 
-        <div class="flex flex-row gap-32">
+        <div class="flex flex-row gap-32 ">
             <div class="flex flex-col">
                 <i class="fa-solid fa-burger"></i> 
                 <p>restaurantes</p>
@@ -59,23 +60,90 @@
                 bebidas
             </div>
         </div>
-<!-- banners -->
-        <div>
-            banners de propagandas flow
-        </div>
-
-        <div>
-            <div>Cupom e entrega grátis</div>
-            <div>Use seu cupom aqui!</div>
-            <div>ver mais!</div>
-        </div>
-        <div>
-            restaurantes flow
-        </div>
-
     </section>
+<!-- banners -->
+    <section>
+        <div class="flex overflow-x-auto gap-4 p-4 w-full mx-15">
+            <div class="flex-none snap-center w-[300px]">
+                <img src="assets/1.jpg" class="w-full h-48 object-cover rounded-xl">
+            </div>
+            <div class="flex-none snap-center w-[300px]">
+                <img src="assets/2.jpg" class="w-full h-48 object-cover rounded-xl">
+            </div>
+            <div class="flex-none snap-center w-[300px]">
+                <img src="assets/3.jpg" class="w-full h-48 object-cover rounded-xl">
+            </div>
+            <div class="flex-none snap-center w-[300px]">
+                <img src="assets/4.jpg" class="w-full h-48 object-cover rounded-xl">
+            </div>
+            <div class="flex-none snap-center w-[300px]">
+                <img src="assets/5.jpg" class="w-full h-48 object-cover rounded-xl">
+            </div>
+            <div class="flex-none snap-center w-[300px]">
+                <img src="assets/6.jpg" class="w-full h-48 object-cover rounded-xl">
+            </div>
+            <div class="flex-none snap-center w-[300px]">
+                <img src="assets/7.jpg" class="w-full h-48 object-cover rounded-xl">
+            </div>
+            <div class="flex-none snap-center w-[300px]">
+                <img src="assets/8.jpg" class="w-full h-48 object-cover rounded-xl">
+            </div>
+            <div class="flex-none snap-center w-[300px]">
+                <img src="assets/9.jpg" class="w-full h-48 object-cover rounded-xl">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="flex flex-row justify-between items-center mx-15">
+            <div>
+                <h1 class="text-2xl font-semibold">Cupom e entrega grátis</h1>
+                <p>Use seu cupom aqui!</p>
+            </div>
+            <div class="text-red-600 font-semibold">ver mais!</div>
+        </div>
+        
+    </section>  
 
-
+<!-- ADICONAR O FLOAT DE AQUI, NÃO TÁ 
+ FUNCIONANDO DIREITO, APRENDER A FAZER
+ SEM USAR O DEEPSEK -->
+    <section class="p-4">
+        <!-- Container principal com clearfix -->
+        <div class="flex flex-row max-w-6xl mx-auto overflow-hidden"> <!-- Clearfix via overflow-hidden -->
+            <!-- Card do restaurante 1 -->
+            <div class="float-left w-[48%] md:w-[32%] mb-6 mr-[4%] bg-white rounded-xl shadow-md p-4  ">
+                <div class="flex items-center">
+                    <img 
+                        src="assets/10.jpg" 
+                        class="w-20 h-20 rounded-lg float-left mr-4" 
+                        alt="Restaurante"
+                    >
+                    <div class="overflow-hidden"> <!-- Clearfix interno -->
+                        <h3 class="font-semibold text-lg">Nome do Restaurante</h3>
+                        <p class="text-sm text-gray-600">⭐ 4.5 (250 avaliações)</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card do restaurante 2 -->
+            <div class="float-left w-[48%] md:w-[32%] mb-6 mr-[4%] bg-white rounded-xl shadow-md p-4">
+                <div class="flex items-center">
+                    <img 
+                        src="assets/11.jpg" 
+                        class="w-20 h-20 rounded-lg float-left mr-4" 
+                        alt="Restaurante"
+                    >
+                    <div class="overflow-hidden">
+                        <h3 class="font-semibold text-lg">Comida Caseira</h3>
+                        <p class="text-sm text-gray-600">⭐ 4.8 (300 avaliações)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Adicione mais cards seguindo o padrão -->
+             
+        </div>
+    </section>
     <script></script>
 </body>
 </html>
