@@ -24,9 +24,19 @@
             <div><p>busque por item ou loja</p></div>
     </section>
 
-    <section class="flex flex-row gap-4 text-red-600 justify-end">
-        <div>login</div>
-        <div class=" border-solid rounded-xl outline-2 px-4">sign up</div>
+    <section class="flex flex-row gap-4 text-red-600 justify-end items-center gap-5">
+        <div id="clickEndereco">Endereço</div>
+        <div class="text-3xl mr-2" id="clickArrowLogin">
+            <i class="fa-solid fa-right-to-bracket"></i>
+        </div>
+        <div class="flex flex-row gap-5 items-center">
+            <i class="fa-solid fa-bag-shopping text-3xl"></i>
+            <div class="flex flex-col">
+                <p> R$ x,xx</p>
+                <p> x itens</p>
+            </div>
+            
+        </div>
     </section>
 </header>
 
@@ -34,7 +44,7 @@
     <section class="bg-green-600 text-white flex flex-row gap-9 text-2xl justify-center py-5">
         <div><i class="fa-solid fa-ticket"></i></div>
         <p>Você tem 63 cupons! Aproveite seus descontos</p>      
-        <div><i class="fa-solid fa-caret-down" id="arrowClick"></i></div>  
+        <div><i class="fa-solid fa-caret-down" id="arrowCupom"></i></div>  
     </section>
     
     <section class="mx-15 m-3">
@@ -158,13 +168,38 @@
     </section>
     <script>
 
-        const botao = document.getElementById('arrowClick');
+        const arrowClick = document.getElementById('arrowCupom');
 
-        botao.addEventListener('click', function() {
+        arrowClick.addEventListener('click', function() {
             window.open('cupomPage.html', '_self');
         });
 
+        const login = document.getElementById('clickArrowLogin');
 
+        login.addEventListener('click', function() {
+            window.open('loginPage.html', '_self');
+        });
+
+        const endereco = document.getElementById('clickEndereco');
+
+        endereco.addEventListener('click', function() {
+            // Coletar dados do usuário
+            let ruaDaCasaDoUsuario = prompt('Digite sua Rua:'); 
+            let numberDaCasaDoUsuario = prompt('Digite o Número da sua Casa:');
+            let lugarDeReferenciaDaCasaDoUsuario = prompt('Digite um Ponto de Referência:');
+
+            // Salvar em um objeto
+            let enderecoDoUsuario = {
+                rua: ruaDaCasaDoUsuario,
+                numero: numberDaCasaDoUsuario,
+                referencia: lugarDeReferenciaDaCasaDoUsuario
+            };
+
+            // Exibir o endereço em um alerta
+            alert(`Seu endereço é:\nRua: ${enderecoDoUsuario.rua}\nNúmero: ${enderecoDoUsuario.numero}\nReferência: ${enderecoDoUsuario.referencia}`);
+        });
+
+        
         // let restaurantes = {
         //     "name": "bar do bode",
         //     "endereco": {
