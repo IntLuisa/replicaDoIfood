@@ -7,7 +7,6 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/79eceb2aba.js" crossorigin="anonymous"></script>
 </head>
-<!-- -->
 <header class="text-2xl flex flex-row py-10 justify-around items-center">
     <section>logo</section>
 
@@ -141,9 +140,32 @@
             </div>
             
             <!-- Adicione mais cards seguindo o padrão -->
-             
+            <div class="float-left w-[48%] md:w-[32%] mb-6 mr-[4%] bg-white rounded-xl shadow-md p-4">
+                <div class="flex items-center">
+                    <img 
+                        src="assets/11.jpg" 
+                        class="w-20 h-20 rounded-lg float-left mr-4" 
+                        alt="Restaurante"
+                    >
+                    <div class="overflow-hidden">
+                        <h3 class="font-semibold text-lg"><this class="restaurantes.name"></this></h3>
+                        <p class="text-sm text-gray-600"><this class="restaurantes.classificacao"></this></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <script></script>
+    <script>
+        let restaurantes = {
+            "name": "bar do bode",
+            "endereco": {
+                "rua": "rua 1",
+                "numero": 123
+            },
+            "classificacao": "3 estrelas",
+            "telefones": ["1234-5678", "8765-4321"],
+            // "logo": 
+        }
+    </script>
 </body>
 </html>
