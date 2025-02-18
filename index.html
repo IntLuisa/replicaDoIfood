@@ -34,28 +34,29 @@
     <section class="bg-green-600 text-white flex flex-row gap-9 text-2xl justify-center py-5">
         <div><i class="fa-solid fa-ticket"></i></div>
         <p>Você tem 63 cupons! Aproveite seus descontos</p>      
-        <div><i class="fa-solid fa-caret-down"></i></div>  
+        <div><i class="fa-solid fa-caret-down" id="arrowClick"></i></div>  
     </section>
-    <section class="mx-15 ">
-        <div class="font-semibold  text-3xl">
+    
+    <section class="mx-15 m-3">
+        <div class="font-semibold  my-5 text-3xl">
             Pedir seu delivery no iFood é rápido e prático! Conheça as categorias
         </div>
-
+<!-- areas de vendas -->
         <div class="flex flex-row gap-32 ">
-            <div class="flex flex-col">
-                <i class="fa-solid fa-burger"></i> 
+            <div class="flex flex-col border-solid  rounded-xl outline-2 items-center px-3 py-3">
+                <i class="fa-solid fa-burger text-5xl"></i> 
                 <p>restaurantes</p>
             </div>
-            <div class="flex flex-col">
-                <i class="fa-solid fa-cart-shopping text-2xl"></i> 
+            <div class="flex flex-col border-solid  rounded-xl outline-2 items-center px-6 py-3">
+                <i class="fa-solid fa-cart-shopping text-5xl"></i> 
                 mercado
             </div>
-            <div class="flex flex-col">
-                <i class="fa-solid fa-briefcase-medical"></i>
+            <div class="flex flex-col border-solid  rounded-xl outline-2 items-center px-6 py-3">
+                <i class="fa-solid fa-briefcase-medical text-5xl"></i>
                 farmácias
             </div>
-            <div class="flex flex-col">
-                <i class="fa-solid fa-champagne-glasses"></i>
+            <div class="flex flex-col border-solid  rounded-xl outline-2 items-center px-6 py-3">
+                <i class="fa-solid fa-champagne-glasses text-5xl"></i>
                 bebidas
             </div>
         </div>
@@ -93,7 +94,7 @@
         </div>
     </section>
     <section>
-        <div class="flex flex-row justify-between items-center mx-15">
+        <div class="flex flex-row justify-between items-center mx-15 my-5">
             <div>
                 <h1 class="text-2xl font-semibold">Cupom e entrega grátis</h1>
                 <p>Use seu cupom aqui!</p>
@@ -156,16 +157,24 @@
         </div>
     </section>
     <script>
-        let restaurantes = {
-            "name": "bar do bode",
-            "endereco": {
-                "rua": "rua 1",
-                "numero": 123
-            },
-            "classificacao": "3 estrelas",
-            "telefones": ["1234-5678", "8765-4321"],
-            // "logo": 
-        }
+
+        const botao = document.getElementById('arrowClick');
+
+        botao.addEventListener('click', function() {
+            window.open('cupomPage.html', '_self');
+        });
+
+
+        // let restaurantes = {
+        //     "name": "bar do bode",
+        //     "endereco": {
+        //         "rua": "rua 1",
+        //         "numero": 123
+        //     },
+        //     "classificacao": "3 estrelas",
+        //     "telefones": ["1234-5678", "8765-4321"],
+        //     // "logo": 
+        // }
     </script>
 </body>
 </html>
