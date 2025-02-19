@@ -7,26 +7,36 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/79eceb2aba.js" crossorigin="anonymous"></script>
 </head>
-<header class="text-2xl flex flex-row py-10 justify-around items-center">
-    <section>logo</section>
+<header class="text-xl flex flex-row py-3 justify-around items-center">
+    <div class="text-5xl text-red-600">logo</div>
 
-    <section class="flex flex-row gap-4">
-        <div>início</div>
-        <div>restaurantes</div>
-        <div>mercados</div>
-        <div>bebidas</div>
-        <div>farmácias</div>
-        <div>shopping</div>
+    <section class="flex flex-row gap-4 ">
+        <div class="hover:bg-gray-200 rounded-xl px-2">início</div>
+        <div class="hover:bg-gray-200 rounded-xl px-2">restaurantes</div>
+        <div class="hover:bg-gray-200 rounded-xl px-2">mercados</div>
+        <div class="hover:bg-gray-200 rounded-xl px-2">bebidas</div>
+        <div class="hover:bg-gray-200 rounded-xl px-2">farmácias</div>
+        <div class="hover:bg-gray-200 rounded-xl px-2">shopping</div>
     </section>
 <!-- barra de pesquisa -->
-    <section class="rounded-full flex flex-row gap-4 bg-gray-200 px-44 py-2  text-2xl justify-between">
+    <section class="rounded-full flex flex-row gap-4 bg-gray-200 px-44 py-2  text-xl justify-between">
             <div><i class="fa-solid fa-magnifying-glass"></i></div>
             <div><p>busque por item ou loja</p></div>
     </section>
 
-    <section class="flex flex-row gap-4 text-red-600 justify-end">
-        <div>login</div>
-        <div class=" border-solid rounded-xl outline-2 px-4">sign up</div>
+    <section class="flex flex-row gap-4 text-red-600 justify-end items-center gap-5">
+        <div id="clickEndereco">Endereço</div>
+        <div class="text-3xl mr-2" id="clickArrowLogin">
+            <i class="fa-solid fa-right-to-bracket"></i>
+        </div>
+        <div class="flex flex-row gap-3 items-center">
+            <i class="fa-solid fa-bag-shopping text-2xl"></i>
+            <div class="flex flex-col text-gray-600 text-sm">
+                <p> R$ x,xx</p>
+                <p> x itens</p>
+            </div>
+            
+        </div>
     </section>
 </header>
 
@@ -96,6 +106,30 @@
 
         botao.addEventListener('click', function() {
             window.open('index.html', '_self');
+        });
+
+        const login = document.getElementById('clickArrowLogin');
+        login.addEventListener('click', function() {
+            window.open('loginPage.html', '_self');
+        });
+
+
+        const endereco = document.getElementById('clickEndereco');
+        endereco.addEventListener('click', function() {
+            // Coletar dados do usuário
+            let ruaDaCasaDoUsuario = prompt('Digite sua Rua:'); 
+            let numberDaCasaDoUsuario = prompt('Digite o Número da sua Casa:');
+            let lugarDeReferenciaDaCasaDoUsuario = prompt('Digite um Ponto de Referência:');
+
+            // Salvar em um objeto
+            let enderecoDoUsuario = {
+                rua: ruaDaCasaDoUsuario,
+                numero: numberDaCasaDoUsuario,
+                referencia: lugarDeReferenciaDaCasaDoUsuario
+            };
+
+            // Exibir o endereço em um alerta
+            alert(`Seu endereço é:\nRua: ${enderecoDoUsuario.rua}\nNúmero: ${enderecoDoUsuario.numero}\nReferência: ${enderecoDoUsuario.referencia}`);
         });
     </script>
 </body>
