@@ -1,17 +1,17 @@
-const logo = document.getElementById('myLogin');
-logo.onclick = function () {
-    window.location.href = "index.html"
-}
+// const logo = document.getElementById('myLogin');
+// logo.onclick = function () {
+//     window.location.href = "index.html"
+// }
 
 const arrowClick = document.getElementById('arrowCupom');
 arrowClick.addEventListener('click', function() {
     window.open('cupomPage.html', '_self');
 });
 
-const login = document.getElementById('clickArrowLogin');
-login.addEventListener('click', function() {
-    window.open('loginPage.html', '_self');
-});
+// const login = document.getElementById('clickArrowLogin');
+// login.addEventListener('click', function() {
+//     window.open('loginPage.html', '_self');
+// });
 
 // codigo para a area de endereço e seus promps de comando 
 const endereco = document.getElementById('clickEndereco');
@@ -76,6 +76,12 @@ window.onclick = function(event) {
         modalLogin.classList.add("hidden");                
     }
 }
+
+const openRestauranteX = document.getElementById("restauranteX");
+openRestauranteX.addEventListener('click', function() {
+    window.open('restaurantePage.html', '_self');
+});
+
 
 
 // codigo para criação de objetos de restaurantes

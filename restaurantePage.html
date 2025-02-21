@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante x</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/79eceb2aba.js" crossorigin="anonymous"></script>
+</head>
+
+<header class="text-xl flex flex-row py-3 justify-around items-center">
+    <div class="text-5xl text-red-600" >logo</div>
+
+    <section class="flex flex-row gap-4 ">
+        <div class="hover:bg-gray-200 rounded-xl px-2">início</div>
+        <div class="hover:bg-gray-200 rounded-xl px-2">restaurantes</div>
+        <div class="hover:bg-gray-200 rounded-xl px-2">mercados</div>
+        <div class="hover:bg-gray-200 rounded-xl px-2">bebidas</div>
+        <div class="hover:bg-gray-200 rounded-xl px-2">farmácias</div>
+        <div class="hover:bg-gray-200 rounded-xl px-2">shopping</div>
+    </section>
+<!-- barra de pesquisa -->
+    <section class="rounded-full flex flex-row gap-4 bg-gray-200 px-44 py-2  text-xl justify-between">
+            <div><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div><p>busque por item ou loja</p></div>
+    </section>
+
+    <section class="flex flex-row gap-4 text-red-600 justify-end items-center gap-5">
+        <div id="clickEndereco">Endereço</div>
+
+        <span id="perfil">
+            <div class="text-3xl mr-2" id="openModalLogin">
+                <i class="fa-regular fa-user"></i>
+            </div>
+    <!-- Modal LOGIN-->
+            <div id="modalLogin" class="fixed inset-0 z-50 hidden">
+    <!-- Fundo escurecido P LOGIN -->
+                <div class="fixed inset-0 bg-black opacity-50"></div>
+
+    <!-- Conteúdo do modal LOGIN-->
+                <div class="fixed inset-0 flex items-center justify-center">
+                    <div class="bg-white rounded-lg shadow-lg w-11/12 md:w-1/2 lg:w-1/3 p-6">
+    <!-- Botão de fechar O MODAL LOGIN-->
+                        <div class="flex justify-end">
+                            <i class="fa-solid fa-circle-xmark text-5xl" id="closeModalLogin"></i>
+                        </div>
+                        <div class="flex flex-col justify-evenly items-center ">
+                            <h2 class="text-black font-bold">Olá, usuário</h2>
+                            <div class="text-gray-600 flex flex-col items-center">
+                                <div class="flex flex-row   items-center">
+                                    <i class="fa-regular fa-comment-dots mx-9"></i>
+                                    <p>Chats</p>
+                                </div>
+                                <div class="flex flex-row   items-center">
+                                    <i class="fa-solid fa-receipt mx-9"></i>
+                                    <p>Pedidos</p>
+                                </div>
+                                <div class="flex flex-row   items-center">
+                                    <i class="fa-regular fa-heart mx-9"></i>
+                                    <p>Favoritos</p>
+                                </div>
+                            </div>
+                            
+                        </div>        
+                    </div>
+                </div>
+            </div>
+        </span>
+        <span id="carrinho de compras">
+            <div class="flex flex-row gap-3 items-center" id="openModal">
+                <i class="fa-solid fa-bag-shopping text-2xl"></i>
+                <div class="flex flex-col text-gray-600 text-sm">
+                    <p> R$ x,xx</p>
+                    <p> x itens</p>
+                </div>
+            </div>
+    
+    <!-- Modal -->
+            <div id="myModal" class="fixed inset-0 z-50 hidden">
+    <!-- Fundo escurecido -->
+                <div class="fixed inset-0 bg-black opacity-50"></div>
+    
+    <!-- Conteúdo do modal -->
+                <div class="fixed inset-0 flex items-center justify-center">
+                    <div class="bg-white rounded-lg shadow-lg w-11/12 md:w-1/2 lg:w-1/3 p-6">
+    <!-- Botão de fechar -->
+                        <div class="flex justify-end">
+                            <i class="fa-solid fa-circle-xmark text-5xl" id="closeModal"></i>
+                        </div>
+                        <div class="flex flex-row justify-evenly items-center">
+    <!-- Título e conteúdo -->
+                            <i class="fa-solid fa-face-sad-cry text-8xl items-center"></i>
+                            <div>
+                                <h2 class="text-xl font-bold ">Sua sacola está vazia</h2>
+                                <p>Adicione itens</p>
+                            </div>
+                            
+                        </div>        
+                    </div>
+                </div>
+            </div>
+        </span>
+        
+    </section>
+</header>
+<body>
+    <section>
+        <div class=" flex flex-row justify-center ">
+            <img src="assets/12.jpg" alt="outdoor de propaganda do restaurante" class=" w-3/4 h-96 overflow-hidden rounded-lg shadow-lg opacity-50">
+        </div>
+    </section>
+    <section >
+        <div class="mt-10 ml-60 flex flex-row items-center  ">
+            <div><img src="assets/10.jpg" class="w-20 h-20 rounded-full " alt="Restaurante"></div>
+            <div></div>
+            <div class="flex flex-col mx-10">
+                <h2 class="font-semibold text-6xl">restaurante X</h2> 
+                <p>⭐ 4.5 (250 avaliações)</p>
+            </div>
+            <div class="flex flex-row ml-130 gap-5">
+                <p>Ver mais</p>
+                icon 
+                icon
+                <p>Pedido mínimo R$ 10,00</p>
+            </div>
+        </div>
+        <!-- barra de pesquisa -->
+        <section class="rounded-full flex flex-row gap-4 bg-gray-200 px-44 py-2  text-xl justify-between max-w-3xl mx-60 mt-10">
+            <div><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div><p>busque por item ou loja</p></div>
+        </section>
+    </section>
+    
+</body>
+</html>
