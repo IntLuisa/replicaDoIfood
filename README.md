@@ -14,9 +14,9 @@
 
 <p align="center">
  <a href="#tech">🛠️ Technologies</a> • 
- <a href="#started">🚀 Getting Started</a> • 
- <a href="#colab">👥 Collaborators</a> •
- <a href="#contribute">🤝 Contribute</a>
+ <a href="#started">🚀 Getting Started</a> 
+ <!-- <a href="#colab">👥 Collaborators</a> •
+ <a href="#contribute">🤝 Contribute</a> -->
 </p>
 
 <p align="center">
@@ -43,6 +43,8 @@
 - **HTML**: Estrutura da página.
 - **Tailwind CSS**: Framework CSS para estilização rápida e responsiva.
 - **JavaScript**: Adiciona interatividade e funcionalidades dinâmicas.
+
+<h2 id="technologies">🚀 Getting Started</h2>
 
 ### Pré-requisitos
 
