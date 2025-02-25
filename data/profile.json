@@ -1,0 +1,19 @@
+{
+  "name do restaurante": "restauranteX",
+  "photo": "assets/img/11.jpg",
+  "especialidade do restaurante": "Comida brasileira",
+  "location": "Caruaru - PE",
+  "phone": "(81) 99266-xxxx",
+  "email": "luisa...@gmail.com",
+  "Pratos": {
+    "Executivos": ["PF", "Macarronada", "File com fritas","Carne de sol com macaxeira", "Strogonoff de frango","Frango à parmegiana" ],  
+    "Lanches": ["Coxinhas", "Pastel", "Esfirra","Pizza","Sanduiche","Hamburgues","Pão de Queijo"],
+    "Sobremesas":["Brigadeiro", "Pavê", "Palha italiana", "Pudim","Picolé","Açaí"]
+  },
+  "Bebidas":{
+    "Geladas":["Refrigerante", "Cerveja sem Alcool", "Long Neck"],
+    "Sucos":["Laranja","Morango","Limão","Maracuja"],
+    "Quentes":["Café","Chá","Chocolate quente"],
+    "Vitaminas": ["Banana"]
+  }
+}
